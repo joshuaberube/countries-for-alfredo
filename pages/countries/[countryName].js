@@ -31,7 +31,10 @@ export const getStaticPaths = async () => {
 }
 
 const CountryCardPage = ({country}) => (
-  <CountryCard country={country} />
+  <div>
+    <h1>HELLO THIS IS {country.name}!!!!!</h1>
+    <CountryCard country={country} />
+  </div>
 )
 
 export default CountryCardPage
